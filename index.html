@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <head>
 	<title>George Abraham - UI/UX Developer</title>
 	<link rel="icon" href="./images/GA - White.png" type="image/png" sizes="16x16">
@@ -8,9 +9,10 @@
 	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
 	<link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script  src="./js/function.js"></script>
 </head>
 
-<body>
+<body onload="setLogo()">
 	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
 		<div class="container-fluid">
 			<div class="collapse navbar-collapse" id="myNavbar">
@@ -25,24 +27,31 @@
 		</div>
 	</nav>
 	<section class="background text-center" id="home">
-		<div class="">
+		<div class="profile_section">
 			<div class="profile_name">
 				<h4>George Abraham</h4>
 				<h6>Technology Enthusiast | Front End Developer | Design Thinker</h6>
+			</div>
+			<div class="profile_logo">
+				<img id="profile_logo" src="./images/GA - Black.png" alt="logo" width="20%" height="20%">
 			</div>
 		</div>
 	</section>
 	<section class="contact-section" id="contact">
 		<div class="contact-buttons">
-		  <a class="btn btn-linkedin btn-lg" href="https://www.linkedin.com/in/georgeabraham1912/" target="_blank" ><i class="fa fa-2x fa-linkedin"></i></a>
-		  <a class="btn btn-github btn-lg" href="https://github.com/georgeabraham1912" target="_blank"><i class="fa fa-2x fa-github"></i></a>
-		  <a class="btn btn-drible btn-lg" href="mailto:george.abraham1912@gmail.com" target="_blank" ><i class="fa fa-2x fa-envelope"></i></a>
-		  <a class="btn btn-facebook btn-lg" href="https://www.facebook.com/george.abraham1912/" target="_blank"><i class="fa fa-2x fa-facebook-square"></i></a>
-		</div> 
-	  </section> 
+			<a class="btn btn-linkedin btn-lg" href="https://www.linkedin.com/in/georgeabraham1912/" target="_blank"><i
+					class="fa fa-2x fa-linkedin"></i></a>
+			<a class="btn btn-github btn-lg" href="https://github.com/georgeabraham1912" target="_blank"><i
+					class="fa fa-2x fa-github"></i></a>
+			<a class="btn btn-drible btn-lg" href="mailto:george.abraham1912@gmail.com" target="_blank"><i
+					class="fa fa-2x fa-envelope"></i></a>
+			<a class="btn btn-facebook btn-lg" href="https://www.facebook.com/george.abraham1912/" target="_blank"><i
+					class="fa fa-2x fa-facebook-square"></i></a>
+		</div>
+	</section>
 	<footer>
 		<p id="footer">Copyright © George Abraham 2020</p>
-	  </footer>
+	</footer>
 </body>
 
 </html>
