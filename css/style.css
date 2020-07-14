@@ -6,7 +6,7 @@
 html,
 body {
   width: 100%;
-  height: 100%;
+  height: 100vh;
   font-size: medium;
   font-weight: normal;
 }
@@ -45,7 +45,7 @@ body {
   font-family: auto;
   font-size: 9vw;
   border-bottom: 1px solid white;
-  text-shadow: 9px 8px 0 rgba(0,0,0,0.15);
+  text-shadow: 9px 8px 0 rgba(0, 0, 0, 0.15);
 }
 
 .profile_name h6 {
@@ -66,8 +66,28 @@ footer {
   padding-bottom: 3px;
   width: 100%;
   bottom: 0;
-  position: relative;
+  position: sticky;
+  bottom: 0;
   text-align: center;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1024px) {
+  .contact-section {
+    /* height: 13vh !important; */
+    position: absolute !important;
+    bottom: 0;
+    width: 100vw;
+}
+
+footer {
+  /* line-height: 8px; */
+  /* font-size: small; */
+  /* padding-top: 10px; */
+  /* padding-bottom: 3px; */
+  position: absolute;
+  /* bottom: 0; */
+  width: 100vw;
+}
 }
 
 @media screen and (max-width: 600px) {
@@ -103,19 +123,16 @@ footer {
   }
   .contact-section {
     height: 10vh !important;
-    padding-top: 2vh !important;
+    /* padding-top: 2vh !important; */
+    width: 100vw;
   }
-  nav {
-    visibility: hidden;
-  }
-  
-  
-  .profile_about{
+
+  .profile_about {
     width: 65vw !important;
     color: white !important;
   }
 
-  .profile_about_quote{
+  .profile_about_quote {
     color: white !important;
     font-size: large;
   }
@@ -126,6 +143,7 @@ footer {
     padding-top: 10px;
     padding-bottom: 3px;
     bottom: 0;
+    width: 100vw;
   }
 }
 
@@ -134,7 +152,8 @@ footer {
   background-size: cover;
   height: 7vh;
   align-items: center;
-  padding-top: 1.5vh;
+  padding: 1vh 0 1vh 0;
+  position: relative;
 }
 .contact-buttons {
   display: block;
@@ -200,15 +219,15 @@ footer {
   margin-right: 9vw;
 }
 
-.profile_about_heading{
+.profile_about_heading {
   text-align: left;
   color: white;
   font-weight: bolder;
-  font-family: 'Oswald', sans-serif;
-  text-shadow: 9px 8px 0 rgba(0,0,0,0.15);
+  font-family: "Oswald", sans-serif;
+  text-shadow: 9px 8px 0 rgba(0, 0, 0, 0.15);
 }
 
-.profile_about_quote{
+.profile_about_quote {
   color: black;
   font-size: large;
 }
