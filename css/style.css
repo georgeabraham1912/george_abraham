@@ -24,8 +24,10 @@ body {
 
 .profile_section {
   display: flex;
-  flex-direction: column
-  }  
+  flex-direction: column;
+  position: sticky;
+  top: 0;
+}
 
 .profile_name {
   font-variant: small-caps;
@@ -43,6 +45,7 @@ body {
   font-family: auto;
   font-size: 9vw;
   border-bottom: 1px solid white;
+  text-shadow: 9px 8px 0 rgba(0,0,0,0.15);
 }
 
 .profile_name h6 {
@@ -51,7 +54,7 @@ body {
   text-align: center;
 }
 
-.profile_logo{
+.profile_logo {
   margin-left: 32vw;
 }
 
@@ -67,13 +70,13 @@ footer {
   text-align: center;
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
   .profile_section {
     display: flex;
     flex-direction: column;
     padding-top: 35vh;
-    padding-right: 20vw;;
-    }  
+    padding-right: 20vw;
+  }
 
   .profile_name {
     top: 70%;
@@ -93,7 +96,7 @@ footer {
     font-size: 4.5vw;
     text-align: center;
   }
-  .profile_logo{
+  .profile_logo {
     margin-left: -18vw;
     width: 150%;
     height: 150%;
@@ -101,8 +104,8 @@ footer {
   .contact-section {
     height: 10vh !important;
     padding-top: 2vh !important;
-  } 
-  nav{
+  }
+  nav {
     visibility: hidden;
   }
   /* .contact-buttons > a > i {
@@ -124,7 +127,7 @@ footer {
   height: 7vh;
   align-items: center;
   padding-top: 1.5vh;
-} 
+}
 .contact-buttons {
   display: block;
   width: 100%;
@@ -134,7 +137,7 @@ footer {
 }
 
 .btn-linkedin {
-  background: #0E76A8;
+  background: #0e76a8;
   border-radius: 10px;
   color: #fff;
   border-width: 1px;
@@ -144,7 +147,7 @@ footer {
 .btn-gmail {
   background: #e64786;
   border-radius: 10px;
-  color: white; 
+  color: white;
   border-width: 1px;
   border-style: solid;
   border-color: #084461;
@@ -152,7 +155,7 @@ footer {
 .btn-github {
   background-color: #24292e;
   border-radius: 10px;
-  color: white; 
+  color: white;
   border-width: 1px;
   border-style: solid;
   border-color: #084461;
@@ -160,7 +163,7 @@ footer {
 .btn-email {
   background-color: #141f1f;
   border-radius: 10px;
-  color: white; 
+  color: white;
   border-width: 1px;
   border-style: solid;
   border-color: #084461;
@@ -168,8 +171,35 @@ footer {
 .btn-facebook {
   background-color: #4267b2;
   border-radius: 10px;
-  color: white; 
+  color: white;
   border-width: 1px;
   border-style: solid;
   border-color: #084461;
+}
+
+.btn-instagram {
+  background-color: #3f729b;
+  border-radius: 10px;
+  color: white;
+  border-width: 1px;
+  border-style: solid;
+  border-color: white;
+}
+
+.profile_about {
+  width: 49vw;
+  align-self: flex-end;
+  margin-right: 9vw;
+}
+
+.profile_about_heading{
+  text-align: left;
+  color: white;
+  font-weight: bolder;
+  text-shadow: 9px 8px 0 rgba(0,0,0,0.15);
+}
+
+.profile_about_quote{
+  color: black;
+  font-size: large;
 }

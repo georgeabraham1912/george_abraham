@@ -6,10 +6,11 @@
 	<title>George Abraham - UI/UX Developer</title>
 	<link rel="icon" href="./images/GA - White.png" type="image/png" sizes="16x16">
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
-	<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> -->
 	<link href="https://fonts.googleapis.com/css?family=Staatliches&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<script  src="./js/function.js"></script>
+	<script src="./js/function.js"></script>
 </head>
 
 <body onload="setLogo()">
@@ -20,33 +21,46 @@
 					<li><a href="#home" class="scroll">Home</a></li>
 					<li><a href="#about" class="scroll">About </a></li>
 					<li><a href="#experience" class="scroll">Experience</a></li>
-					<li><a href="#portfolio" class="scroll">Portfolio</a></li>
+					<!-- <li><a href="#portfolio" class="scroll">Portfolio</a></li> -->
 					<li><a href="#contact" class="scroll">Contact</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
-	<section class="background text-center" id="home">
-		<div class="profile_section">
-			<div class="profile_name">
-				<h4>George Abraham</h4>
-				<h6>Technology Enthusiast | Front End Developer | Design Thinker</h6>
-			</div>
-			<div class="profile_logo">
-				<img id="profile_logo" src="" alt="profile_logo" width="20%" height="20%">
+	<div class="background text-center profile_section">
+		<div class="profile_name" id="home">
+			<h4>George Abraham</h4>
+			<h6>Technology Enthusiast | Front End Developer | Design Thinker</h6>
+		</div>
+		<div class="profile_logo">
+			<img id="profile_logo" src="" alt="profile_logo" width="20%" height="100%">
+		</div>
+		<div class="profile_about" id="about">
+			<h2 class="profile_about_heading">about me.</h2>
+			<p class="profile_about_quote">"Technology Enthusiast by profession | Experimental Cook by passion"</p>
+			<div style="text-align: left;">
+				<p>Having more than <b>7 years</b> of overall IT/Consulting experience and led multiple project teams,
+					currently working as a <b>UI Technology Lead</b> for <b>Incture Technology Pvt. Ltd.</b>, based out
+					of Bengaluru.</p>
+				<p>Started my career as an SAP ABAPer, working for Deloitte Consulting close to 6 years. I love to
+					explore newer technologies mainly on the Front End Design like SAP UI5, ReactJS, HTML5, CSS3 mixing
+					it with various libraries like ArcGIS JS, Plotly JS, AR-VR, etc.</p>
 			</div>
 		</div>
-	</section>
+	</div>
+
 	<section class="contact-section" id="contact">
 		<div class="contact-buttons">
-			<a class="btn btn-linkedin btn-lg-block" href="https://www.linkedin.com/in/georgeabraham1912/" target="_blank"><i
-					class="fa fa-2x fa-linkedin"></i></a>
+			<a class="btn btn-linkedin btn-lg-block" href="https://www.linkedin.com/in/georgeabraham1912/"
+				target="_blank" title="LinkedIn"><i class="fa fa-2x fa-linkedin"></i></a>
 			<a class="btn btn-github btn-lg-block" href="https://github.com/georgeabraham1912" target="_blank"><i
-					class="fa fa-2x fa-github"></i></a>
-			<a class="btn btn-gmail btn-lg-block" href="mailto:george.abraham1912@gmail.com" target="_blank"><i
+					class="fa fa-2x fa-github" title="GitHub"></i></a>
+			<a class="btn btn-gmail btn-lg-block" href="mailto:george.abraham1912@gmail.com" target="_blank" title="GMail"><i
 					class="fa fa-2x fa-envelope"></i></a>
-			<a class="btn btn-facebook btn-lg-block" href="https://www.facebook.com/george.abraham1912/" target="_blank"><i
-					class="fa fa-2x fa-facebook-square"></i></a>
+			<a class="btn btn-facebook btn-lg-block" href="https://www.facebook.com/george.abraham1912/"
+				target="_blank" title="Facebook"><i class="fa fa-2x fa-facebook-square"></i></a>
+			<a class="btn btn-instagram btn-lg-block" href="https://www.instagram.com/lg_cherukaddis/"
+				target="_blank" title="Instagram - Cooking Experiments"><i class="fa fa-2x fa-instagram"></i></a>
 		</div>
 	</section>
 	<footer>
