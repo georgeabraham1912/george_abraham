@@ -108,9 +108,17 @@ footer {
   nav {
     visibility: hidden;
   }
-  /* .contact-buttons > a > i {
-    font-size: 1em;
-  } */
+  
+  
+  .profile_about{
+    width: 65vw !important;
+    color: white !important;
+  }
+
+  .profile_about_quote{
+    color: white !important;
+    font-size: large;
+  }
 
   footer {
     line-height: 8px;
@@ -196,6 +204,7 @@ footer {
   text-align: left;
   color: white;
   font-weight: bolder;
+  font-family: 'Oswald', sans-serif;
   text-shadow: 9px 8px 0 rgba(0,0,0,0.15);
 }
 
