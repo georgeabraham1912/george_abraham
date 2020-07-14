@@ -58,6 +58,11 @@ body {
   margin-left: 32vw;
 }
 
+.profile_logo_img {
+  height: 10vw !important;
+  /* width: auto !important; */
+}
+
 footer {
   background-color: #000000;
   color: white;
@@ -120,6 +125,10 @@ footer {
     margin-left: -18vw;
     width: 150%;
     height: 150%;
+  }
+  .profile_logo_img {
+    height: 25vw !important;
+    /* width: auto !important; */
   }
   .contact-section {
     height: 10vh !important;
